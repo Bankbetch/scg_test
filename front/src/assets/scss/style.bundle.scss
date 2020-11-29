@@ -1,0 +1,19 @@
+@import './variables';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+@import './footer', './pages/home.scss', './pages/about.scss', './pages/googlemap.scss', './pages/xyz.scss';
+
+ิbody {
+  color: $font_color !important;
+}
+
+.router-link-active,
+.router-link-exact-active {
+  color: $dark !important;
+}
+.container {
+  display: block;
+  min-height: 100%;
+  height: 100%;
+  margin-bottom: -20px;
+}

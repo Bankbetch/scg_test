@@ -1,0 +1,66 @@
+@import '../mixins';
+
+.profile {
+  width: 100%;
+
+  margin: 30px auto;
+  @include box-shadow();
+  background-color: $white;
+  padding-left: 40px;
+  padding-right: 20px;
+  margin-bottom: 5rem;
+  &--left-side {
+    background-color: $primary;
+    .contact {
+      color: $white;
+    }
+    hr {
+      border-top: 1.25px solid $white;
+    }
+  }
+  &--right-side {
+    color: $font-color;
+    hr {
+      border-top: 1.75px solid $dark;
+    }
+    p {
+      font-size: small;
+      line-height: 1.25;
+      &.title-work {
+        color: $primary;
+        font-weight: 500;
+        margin-bottom: 0px;
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    label {
+      line-height: 1.25;
+      &.subtitle-work {
+        font-size: small;
+        margin-left: 1.4rem;
+      }
+    }
+    .work-details {
+      font-size: small;
+    }
+  }
+  &--info {
+    padding: 5px;
+    @include box-shadow();
+    background-color: $white;
+    width: auto;
+    max-width: 200px;
+    border-radius: 10px;
+    color: $font_color;
+    text-align: center;
+    margin: 0.75rem auto;
+  }
+  a {
+    color: $white;
+  }
+}
+.icon-skills {
+  font-size: 2rem;
+}

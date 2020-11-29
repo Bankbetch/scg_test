@@ -1,0 +1,8 @@
+@import '../mixins';
+
+.card {
+  &.c-xyz {
+    padding: 1.25rem;
+    @include box-shadow();
+  }
+}
